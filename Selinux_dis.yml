@@ -1,0 +1,9 @@
+---
+- name: Операции с SELinux
+  hosts: new.my
+  become: yes
+
+  tasks:
+  - name: Отключаем SELinux
+    selinux:
+      state: disabled
